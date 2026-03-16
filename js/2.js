@@ -11,7 +11,7 @@ let nota = prompt("Ingrese una nota de 0 a 10:");
 
 //verifico si no es un numero
 if (isNaN(nota) || nota.trim() === "") {
-    alert("La nota ingresada no es válida");
+    alert("Introduce un numero valido");
 } else {
     nota = parseFloat(nota);
 
@@ -28,6 +28,7 @@ if (isNaN(nota) || nota.trim() === "") {
     } else if (nota == 10) {
         alert("Sobresaliente");
     } else {
-        alert("La nota debe estar entre 0 y 10");
+        alert("numero erroneo");
     }
+    
 }
