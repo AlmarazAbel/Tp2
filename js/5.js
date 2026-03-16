@@ -23,7 +23,7 @@ while (true) {
 
     if (isNaN(numero) || numero.trim() === "") {
         alert("Debe ingresar un número válido");
-        continue;
+        continue;//Hace que el programa vuelva al inicio del while y pida el número otra vez.
     }
 
     numero = parseInt(numero);
