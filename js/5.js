@@ -14,27 +14,20 @@ let letras = ["T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q
 let numero;
 
 while (true) {
-
     numero = prompt("Ingrese el número de DNI (0 - 99999999):");
-
     if (numero === null) {
         break; // salir si presiona cancelar
     }
-
     if (isNaN(numero) || numero.trim() === "") {
         alert("Debe ingresar un número válido");
         continue;//Hace que el programa vuelva al inicio del while y pida el número otra vez.
     }
-
     numero = parseInt(numero);
-
     if (numero < 0 || numero > 99999999) {
         alert("El número debe estar entre 0 y 99999999");
         continue;
     }
-
     let resto = numero % 23;
     let letra = letras[resto];
-
     alert("El DNI completo es: " + numero + "-" + letra);
 }
