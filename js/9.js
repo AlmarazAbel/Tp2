@@ -17,7 +17,7 @@
 for (let i = 1; i <= 500; i++) {
 //multiplos de 4
     if (i % 4 === 0) {
-        document.write(i + " (Múltiplo de 4)<br>");
+        document.write(i + " (Múltiplo de 4)<br>");// br hace Salto de linea
         //multiplos de 9
     } else if (i % 9 === 0) {
         document.write(i + " (Múltiplo de 9)<br>");

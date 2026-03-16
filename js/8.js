@@ -17,9 +17,10 @@ if (isNaN(numero) || numero.trim() === "") {
 
     numero = parseInt(numero);
 
-    if (numero > 50) {
+    if (numero > 50 || numero < 0) {
         alert("El número no puede ser mayor a 50");
-    } else {
+    } 
+    else {
 
         for (let i = 1; i <= numero; i++) {
 
